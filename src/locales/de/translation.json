@@ -311,29 +311,29 @@
   "newsletter": {
     "title": "Erfolgreich abonniert !"
   },
-  "privacyPolicyTitle": "Datenschutzerklärung",
-  "privacyPolicyHeroSubtitle": "Ihr Vertrauen und die Datensicherheit haben für uns oberste Priorität.",
-  "privacyPolicyCtaTitle": "Haben Sie Fragen zu Ihren Daten?",
-  "privacyPolicyCtaText": "Wir sind hier, um zu helfen. Kontaktieren Sie uns bei Fragen zu Ihren persönlichen Daten und unseren Datenschutzpraktiken.",
+  "privacyPolicyTitle": "Datenschutzerklaerung",
+  "privacyPolicyHeroSubtitle": "Ihr Vertrauen und Ihre Datensicherheit sind uns wichtig.",
+  "privacyPolicyCtaTitle": "Fragen zu Ihren Daten?",
+  "privacyPolicyCtaText": "Wir helfen Ihnen gerne. Kontaktieren Sie uns bei Fragen zu Ihren persoenlichen Daten und unseren Datenschutzpraktiken.",
   "privacyPolicyCtaButton": "Support kontaktieren",
   "privacyPolicy": {
     "tocTitle": "Inhaltsverzeichnis",
     "sections": {
       "generalStatement": {
-        "title": "Allgemeine Erklärung",
-        "content": "Ihre Privatsphäre ist uns wichtig.\n\nDie Backpack Wander GmbH nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst und hält sich an die geltenden Datenschutzgesetze."
+        "title": "1. Allgemeine Hinweise",
+        "content": "Die Backpack Wander GmbH nimmt den Schutz personenbezogener Daten sehr ernst und verarbeitet diese gemaess DSGVO."
       },
       "responsibleEntity": {
-        "title": "Verantwortliche Stelle",
-        "content": "Verantwortliche Stelle:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nDeutschland\nE-Mail: info@backpackwander.com"
+        "title": "2. Verantwortliche Stelle",
+        "content": "Backpack Wander GmbH\nKolonnenstrasse 8\n10827, Berlin\nDeutschland\n\nE-Mail: info@backpackwander.de"
       },
       "useOfData": {
-        "title": "Verwendung von Daten",
-        "content": "Verwendung von Daten:\n\nWir nutzen Google Analytics, um die Nutzung unserer Website zu analysieren und unsere Dienste zu verbessern.\nFür Newsletter und E-Mail-Marketing verwenden wir MailerLite.\nIhre personenbezogenen Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben – außer wenn gesetzlich vorgeschrieben."
+        "title": "3. Datenverarbeitung & Ihre Rechte",
+        "content": "Diese Datenschutzerklaerung gilt fuer alle Leistungen und Marken der Backpack Wander GmbH, einschliesslich Pipeline Quality.\n\nRechtsgrundlagen (Art. 6 DSGVO):\n- Art. 6 Abs. 1 lit. b DSGVO - Vertragserfuellung\n- Art. 6 Abs. 1 lit. f DSGVO - berechtigtes Interesse\n- Art. 6 Abs. 1 lit. a DSGVO - Einwilligung\n\nUebermittelte Daten werden ausschliesslich zur Bearbeitung von Anfragen und Projekten verarbeitet.\n\nDie Kommunikation ueber WhatsApp erfolgt gemaess der Datenschutzrichtlinie von WhatsApp.\n\nWir nutzen Google Analytics auf Basis einer Einwilligung.\n\nDaten werden nur so lange gespeichert, wie gesetzlich erforderlich."
       },
       "yourRights": {
-        "title": "Ihre Rechte",
-        "content": "Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten. Bei Fragen zum Datenschutz kontaktieren Sie uns bitte."
+        "title": "4. Ihre Rechte",
+        "content": "Sie haben das Recht auf Auskunft, Berichtigung, Loeschung, Einschraenkung und Widerspruch.\n\nAnfragen: info@backpackwander.de"
       }
     }
   },
@@ -362,24 +362,66 @@
   "termsAndConditionsCtaText": "Kontaktieren Sie uns, wenn Sie Fragen zu unseren Allgemeinen Geschäftsbedingungen haben.",
   "termsAndConditionsCtaButton": "Support kontaktieren",
   "termsAndConditions": {
+    "title": "Allgemeine Geschaeftsbedingungen",
     "tocTitle": "Inhaltsverzeichnis",
     "sections": {
       "generalTerms": {
-        "title": "Allgemeine Bestimmungen",
-        "content": "Diese Allgemeinen Geschäftsbedingungen regeln die Nutzung unserer Website und Dienstleistungen.\n\nDurch den Zugriff auf und die Nutzung unserer Dienste akzeptieren Sie die Bestimmungen dieser Vereinbarung und erklären sich damit einverstanden."
+        "title": "Allgemeine Bedingungen",
+        "content": "Diese Allgemeinen Geschaeftsbedingungen gelten fuer alle Leistungen und Angebote der Backpack Wander GmbH.\n\nDie Backpack Wander GmbH erbringt insbesondere folgende Leistungen:\n- Coaching fuer Privatpersonen und Unternehmen\n- Dienstleistungen im Bereich Marketing, digitale Produkte und Online-Angebote\n- QA/QC Dokumentationsunterstuetzung und ingenieurtechnische Dienstleistungen\n- Projektbezogene Remote- und Vor-Ort-Unterstuetzung\n- Verkauf digitaler Produkte und Merchandising-Artikel\n\nDie Leistungen werden unter verschiedenen Marken der Backpack Wander GmbH erbracht, einschliesslich der Marke Pipeline Quality.\n\nVertragspartner ist ausschliesslich die Backpack Wander GmbH, sofern nicht ausdruecklich anders vereinbart."
       },
       "services": {
         "title": "Unsere Dienstleistungen",
-        "content": "Die Backpack Wander GmbH bietet digitales Business-Coaching, Webdesign und digitale Marketingdienstleistungen an.\n\nWir behalten uns das Recht vor, Dienstleistungen jederzeit ohne Vorankündigung zu ändern oder einzustellen."
+        "content": "Backpack Wander GmbH bietet digitales Business-Coaching, Webdesign und digitale Marketing-Dienstleistungen an.\n\nWir behalten uns das Recht vor, jede Dienstleistung jederzeit ohne Vorankuendigung zu aendern oder einzustellen."
       },
       "userObligations": {
         "title": "Nutzerpflichten",
-        "content": "Nutzer müssen genaue Informationen bereitstellen und unsere Dienste in Übereinstimmung mit geltendem Recht nutzen.\n\nSie sind für die Vertraulichkeit Ihrer Kontoinformationen verantwortlich."
+        "content": "Nutzer muessen genaue Informationen angeben und unsere Dienste in Uebereinstimmung mit den geltenden Gesetzen nutzen.\n\nSie sind verantwortlich fuer die Wahrung der Vertraulichkeit Ihrer Kontoinformationen."
       },
       "liability": {
-        "title": "Haftungsbeschränkung",
-        "content": "Unsere Haftung ist im gesetzlich zulässigen Rahmen beschränkt.\n\nWir haften nicht für indirekte, zufällige, besondere oder Folgeschäden, die aus der Nutzung unserer Dienste entstehen."
+        "title": "Haftungsbeschraenkung",
+        "content": "Die Haftung der Backpack Wander GmbH ist auf Vorsatz und grobe Fahrlaessigkeit beschraenkt, soweit gesetzlich zulaessig.\n\nEine Haftung fuer mittelbare Schaeden oder entgangenen Gewinn ist ausgeschlossen, sofern gesetzlich zulaessig.\n\nEs gilt das Recht der Bundesrepublik Deutschland.\n\nGerichtsstand ist - soweit gesetzlich zulaessig - der Sitz der Gesellschaft."
       }
     }
-  }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "sections": {
+      "intro": {
+        "title": "Angaben gemaess Paragraph 5 TMG",
+        "content": "Backpack Wander GmbH\nKolonnenstrasse 8\n10827, Berlin\nDeutschland"
+      },
+      "director": {
+        "title": "Vertreten durch",
+        "content": "Biljana Habel"
+      },
+      "register": {
+        "title": "Registereintrag",
+        "content": "Eingetragen im Handelsregister\nRegistergericht:\nCharlottenburg, 14057 Berlin\nHandelsregisternummer:\nHRB 282058 B"
+      },
+      "vat": {
+        "title": "Umsatzsteuer-ID gemaess Paragraph 27 a Umsatzsteuergesetz",
+        "content": "DE451725510"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "E-Mail: info@backpackwander.de"
+      },
+      "brand": {
+        "title": "Markeninformation",
+        "content": "Pipeline Quality ist eine Marke der Backpack Wander GmbH."
+      }
+    }
+  },
+  "termsTitle": "Allgemeine Geschaeftsbedingungen",
+  "termsHeroSubtitle": "Bitte lesen Sie unsere Geschaeftsbedingungen sorgfaeltig durch.",
+  "termsCtaTitle": "Fragen zu unseren Bedingungen?",
+  "termsCtaText": "Kontaktieren Sie uns bei Fragen zu unseren Geschaeftsbedingungen.",
+  "termsCtaButton": "Support kontaktieren",
+  "imprintTitle": "Impressum",
+  "imprintHeroSubtitle": "Rechtliche Informationen ueber Backpack Wander GmbH.",
+  "imprintCtaTitle": "Weitere Informationen benoetigt?",
+  "imprintCtaText": "Kontaktieren Sie uns bei Fragen zu unseren Unternehmensinformationen.",
+  "imprintCtaButton": "Kontakt",
+  "footer.termsAndConditions": "AGB",
+  "footer.imprint": "Impressum"
 }

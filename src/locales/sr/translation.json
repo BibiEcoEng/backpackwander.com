@@ -311,29 +311,29 @@
   "newsletter": {
     "title": "Hvala na prijavi!"
   },
-  "privacyPolicyTitle": "Politika privatnosti",
-  "privacyPolicyHeroSubtitle": "Vaše poverenje i zaštita podataka su nam na prvom mestu.",
-  "privacyPolicyCtaTitle": "Imate pitanja o vašim podacima?",
-  "privacyPolicyCtaText": "Tu smo za vas. Kontaktirajte nas za pitanja o vašim podacima i našim praksama.",
-  "privacyPolicyCtaButton": "Kontakt podršku",
+  "privacyPolicyTitle": "Privacy Policy",
+  "privacyPolicyHeroSubtitle": "Your trust and data security are paramount to us.",
+  "privacyPolicyCtaTitle": "Have Questions About Your Data?",
+  "privacyPolicyCtaText": "We're here to help. Contact us for any inquiries regarding your personal data and our privacy practices.",
+  "privacyPolicyCtaButton": "Contact Support",
   "privacyPolicy": {
-    "tocTitle": "Sadržaj",
+    "tocTitle": "Table of Contents",
     "sections": {
       "generalStatement": {
-        "title": "Opšta izjava",
-        "content": "Vaša privatnost nam je važna.\n\nBackpack Wander GmbH shvata zaštitu vaših ličnih podataka vrlo ozbiljno i pridržava se važećih zakona o zaštiti podataka."
+        "title": "1. General Information",
+        "content": "Backpack Wander GmbH takes the protection of personal data seriously and processes personal data in accordance with applicable data protection laws, including the GDPR."
       },
       "responsibleEntity": {
-        "title": "Odgovorno lice",
-        "content": "Odgovorno lice:\nBackpack Wander GmbH\nEwaldstraße 28\n45699 Herten\nNemačka\nEmail: info@backpackwander.com"
+        "title": "2. Responsible Entity",
+        "content": "Backpack Wander GmbH\nKolonnenstrasse 8\n10827, Berlin\nGermany\n\nEmail: info@backpackwander.com"
       },
       "useOfData": {
-        "title": "Upotreba podataka",
-        "content": "Upotreba podataka:\n\nKoristimo Google Analytics za analizu sajta i unapređenje usluga.\nZa newsletter i email marketing koristimo MailerLite.\nVaši podaci se neće deliti sa trećim stranama bez vašeg pristanka – osim ako nije zakonski obavezno."
+        "title": "3. Data Processing & Your Rights",
+        "content": "This Privacy Policy applies to all services and brands operated by Backpack Wander GmbH, including the Pipeline Quality brand.\n\nLegal Basis for Data Processing (Art. 6 GDPR):\n- Art. 6(1)(b) GDPR - performance of a contract or pre-contractual measures\n- Art. 6(1)(f) GDPR - legitimate interest\n- Art. 6(1)(a) GDPR - consent, where applicable\n\nPersonal data submitted via contact forms or file uploads is processed solely to handle inquiries and project-related communication.\n\nCommunication via WhatsApp is subject to WhatsApp's privacy policy and used exclusively for business purposes.\n\nWe use Google Analytics to analyze website usage. Data processing is based on consent.\n\nData is stored only as long as necessary or required by statutory retention obligations."
       },
       "yourRights": {
-        "title": "Vaša prava",
-        "content": "Imate pravo na pristup, ispravku ili brisanje vaših podataka u bilo kom trenutku. Za pitanja o zaštiti podataka, kontaktirajte nas."
+        "title": "4. Your Rights",
+        "content": "You have the right to access, rectification, erasure, restriction, data portability and objection.\n\nRequests: info@backpackwander.com"
       }
     }
   },
@@ -362,24 +362,66 @@
   "termsAndConditionsCtaText": "Kontaktirajte nas ako imate pitanja o uslovima korišćenja.",
   "termsAndConditionsCtaButton": "Kontakt podršku",
   "termsAndConditions": {
-    "tocTitle": "Sadržaj",
+    "title": "General Terms and Conditions",
+    "tocTitle": "Table of Contents",
     "sections": {
       "generalTerms": {
-        "title": "Opšti uslovi",
-        "content": "Ovi uslovi regulišu korišćenje sajta i usluga.\n\nKorišćenjem naših usluga prihvatate i slažete se sa odredbama ovog ugovora."
+        "title": "General Terms",
+        "content": "These General Terms and Conditions apply to all services and offers of Backpack Wander GmbH.\n\nBackpack Wander GmbH provides, in particular, the following services:\n\n- Coaching for individuals and companies\n- Services in the areas of marketing, digital products, and online offerings\n- QA/QC documentation support and engineering services\n- Project-related remote and on-site support\n- Sale of digital products and merchandise\n\nThe services are provided under various brands of Backpack Wander GmbH, including the Pipeline Quality brand.\n\nThe contractual partner is exclusively Backpack Wander GmbH, unless expressly agreed otherwise."
       },
       "services": {
-        "title": "Naše usluge",
-        "content": "Backpack Wander GmbH pruža digitalni poslovni koučing, web dizajn i digitalni marketing.\n\nZadržavamo pravo da izmenimo ili obustavimo bilo koju uslugu u svako doba bez najave."
+        "title": "Our Services",
+        "content": "Backpack Wander GmbH provides digital business coaching, web design, and digital marketing services.\n\nWe reserve the right to modify or discontinue any service at any time without notice."
       },
       "userObligations": {
-        "title": "Obaveze korisnika",
-        "content": "Korisnici moraju pružiti tačne informacije i koristiti naše usluge u skladu sa zakonima.\n\nOdgovorni ste za čuvanje poverljivosti vaših naloga."
+        "title": "User Obligations",
+        "content": "Users must provide accurate information and use our services in compliance with applicable laws.\n\nYou are responsible for maintaining the confidentiality of your account information."
       },
       "liability": {
-        "title": "Ograničenje odgovornosti",
-        "content": "Naša odgovornost je ograničena u granicama zakona.\n\nNe odgovaramo za indirektne, slučajne, posebne ili posledične štete nastale korišćenjem naših usluga."
+        "title": "Limitation of Liability",
+        "content": "The liability of Backpack Wander GmbH is limited to intent and gross negligence, to the extent permitted by law.\n\nLiability for indirect damages or lost profits is excluded, to the extent permitted by law.\n\nThe laws of the Federal Republic of Germany apply.\n\nThe place of jurisdiction is - to the extent permitted by law - the company's registered office."
       }
     }
-  }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "sections": {
+      "company": {
+        "title": "Company Information",
+        "content": "Backpack Wander GmbH\nKolonnenstrasse 8\n10827, Berlin\nGermany"
+      },
+      "director": {
+        "title": "Managing Director",
+        "content": "Biljana Habel"
+      },
+      "register": {
+        "title": "Commercial Register",
+        "content": "Charlottenburg, 14057 Berlin\nHRB 282058 B"
+      },
+      "vat": {
+        "title": "VAT Identification Number",
+        "content": "DE451725510"
+      },
+      "contact": {
+        "title": "Email",
+        "content": "info@backpackwander.com"
+      },
+      "brand": {
+        "title": "Brand Information",
+        "content": "Pipeline Quality is a brand of Backpack Wander GmbH."
+      }
+    }
+  },
+  "termsTitle": "Terms and Conditions",
+  "termsHeroSubtitle": "Please read our terms and conditions carefully.",
+  "termsCtaTitle": "Questions About Our Terms?",
+  "termsCtaText": "Contact us if you have any questions about our terms and conditions.",
+  "termsCtaButton": "Contact Support",
+  "imprintTitle": "Imprint",
+  "imprintHeroSubtitle": "Legal information about Backpack Wander GmbH.",
+  "imprintCtaTitle": "Need More Information?",
+  "imprintCtaText": "Contact us for any questions about our company information.",
+  "imprintCtaButton": "Contact Us",
+  "footer.termsAndConditions": "Terms & Conditions",
+  "footer.imprint": "Imprint"
 }
