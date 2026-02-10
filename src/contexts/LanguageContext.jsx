@@ -13,9 +13,9 @@ export const LanguageProvider = ({ children }) => {
 
   // Get default language from build configuration
   const getDefaultLanguage = () => {
-    // In development mode, always use English
+    // In development mode, always use Serbian
     if (import.meta.env.DEV) {
-      return "en";
+      return "sr";
     }
 
     // Try to get from build-time variable first
@@ -32,7 +32,7 @@ export const LanguageProvider = ({ children }) => {
     }
 
     // Final fallback
-    return "en";
+    return "sr";
   };
 
   const defaultLanguage = getDefaultLanguage();
@@ -40,11 +40,11 @@ export const LanguageProvider = ({ children }) => {
   // Force default language on initial mount
   useEffect(() => {
     if (import.meta.env.DEV) {
-      // In development, always force English
-      console.log("LanguageContext: Forcing English in development mode");
+      // In development, always force Serbian
+      console.log("LanguageContext: Forcing Serbian in development mode");
       localStorage.removeItem("i18nextLng");
-      localStorage.setItem("i18nextLng", "en");
-      i18n.changeLanguage("en");
+      localStorage.setItem("i18nextLng", "sr");
+      i18n.changeLanguage("sr");
     } else {
       // In production, use the build-specific default
       localStorage.removeItem("i18nextLng");

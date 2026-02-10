@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig(() => {
   // Get the default language from environment variable or fallback to Serbian
-  const defaultLang = process.env.VITE_DEFAULT_LANG || "en";
+  const defaultLang = process.env.VITE_DEFAULT_LANG || "sr";
 
   return {
     plugins: [

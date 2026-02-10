@@ -56,7 +56,7 @@ if (import.meta.env.DEV) {
 
 i18n
   // Use backend plugin for loading translations
-  .use(Backend)
+  // .use(Backend) // Disabled to prevent language override issues
   // Detect user language - disabled to enforce default language based on build
   // .use(LanguageDetector)
   // Pass the i18n instance to react-i18next
