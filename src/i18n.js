@@ -6,7 +6,6 @@ import Backend from "i18next-http-backend";
 // Import translation files
 import translationEN from "./locales/en/translation.json";
 import translationDE from "./locales/de/translation.json";
-import translationSR from "./locales/sr/translation.json";
 
 // Resources object with translations
 const resources = {
@@ -15,9 +14,6 @@ const resources = {
   },
   de: {
     translation: translationDE,
-  },
-  sr: {
-    translation: translationSR,
   },
 };
 
@@ -36,7 +32,7 @@ const getDefaultLanguage = () => {
   // Fallback: try to detect from document lang attribute
   if (typeof document !== "undefined" && document.documentElement.lang) {
     const docLang = document.documentElement.lang;
-    if (["en", "de", "sr"].includes(docLang)) {
+    if (["en", "de"].includes(docLang)) {
       return docLang;
     }
   }

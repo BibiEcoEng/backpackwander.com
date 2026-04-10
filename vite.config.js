@@ -32,8 +32,18 @@ export default defineConfig(() => {
       // Make default language available in the app
       __DEFAULT_LANGUAGE__: JSON.stringify(defaultLang),
     },
+    server: {
+      proxy: {
+        '/api': {
+          target: 'http://localhost:5001',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '/api'),
+        },
+      },
+    },
     build: {
       outDir: `dist-${defaultLang}`,
+      chunkSizeWarningLimit: 1000,
       rollupOptions: {
         input: `./index-${defaultLang}.html`,
         output: {
@@ -41,6 +51,12 @@ export default defineConfig(() => {
           chunkFileNames: `assets/[name]-${defaultLang}-[hash].js`,
           entryFileNames: `assets/[name]-${defaultLang}-[hash].js`,
           assetFileNames: `assets/[name]-${defaultLang}-[hash].[ext]`,
+          manualChunks: {
+            'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+            'animation-vendor': ['framer-motion'],
+            'i18n-vendor': ['i18next', 'react-i18next'],
+            'ui-vendor': ['lucide-react'],
+          },
         },
       },
     },

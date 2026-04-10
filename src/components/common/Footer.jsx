@@ -61,32 +61,34 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-3xl font-bold mb-4 text-green">
-              <span className="text-white">Backpack</span> Wander
+            <h3 className="text-3xl font-bold mb-4">
+              <span className="text-[#52a77f]">Backpack</span> Wander
             </h3>
-            <p className="mb-4 text-gray-300">{t("footer.tagline")}</p>
+            <p className="mb-4 text-gray-300 text-sm">
+              {t('footer.aboutDescription')}
+            </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="text-gray-300 hover:text-green transition-colors"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#52a77f] transition-colors"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
-                className="text-gray-300 hover:text-green transition-colors"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#52a77f] transition-colors"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
-                className="text-gray-300 hover:text-green transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-green transition-colors"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#52a77f] transition-colors"
               >
                 <Linkedin size={20} />
               </a>
@@ -95,99 +97,95 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red">
-              {t("footer.quickLinks")}
+            <h3 className="text-xl font-semibold mb-4 text-white">
+              {t('footer.services')}
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-green transition-colors"
+                <button
+                  onClick={() => {
+                    const element = document.querySelector('#engineering');
+                    if (element) {
+                      window.scrollTo({
+                        top: element.offsetTop - 100,
+                        behavior: 'smooth',
+                      });
+                    }
+                  }}
+                  className="text-gray-300 hover:text-[#52a77f] transition-colors text-left"
                 >
-                  {t("footer.links.about")}
-                </a>
+                  {t('footer.pipelineQuality')}
+                </button>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-green transition-colors"
+                <button
+                  onClick={() => {
+                    const element = document.querySelector('#digital');
+                    if (element) {
+                      window.scrollTo({
+                        top: element.offsetTop - 100,
+                        behavior: 'smooth',
+                      });
+                    }
+                  }}
+                  className="text-gray-300 hover:text-[#52a77f] transition-colors text-left"
                 >
-                  {t("footer.links.services")}
-                </a>
+                  {t('footer.bwDigit')}
+                </button>
               </li>
               <li>
-                <a
-                  href="http://setfreeway.com"
-                  target="_blank"
-                  className="text-gray-300 hover:text-green transition-colors"
+                <button
+                  onClick={() => {
+                    const element = document.querySelector('#contact');
+                    if (element) {
+                      window.scrollTo({
+                        top: element.offsetTop - 100,
+                        behavior: 'smooth',
+                      });
+                    }
+                  }}
+                  className="text-gray-300 hover:text-[#52a77f] transition-colors text-left"
                 >
-                  {t("footer.links.coaching")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://bwdigit.de"
-                  target="_blank"
-                  className="text-gray-300 hover:text-green transition-colors"
-                >
-                  {t("footer.links.webdesign")}
-                </a>
+                  {t('footer.contactLink')}
+                </button>
               </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red">
-              {t("footer.contactUs")}
+            <h3 className="text-xl font-semibold mb-4 text-white">
+              {t('footer.contactSection')}
             </h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin size={20} className="text-green mt-1" />
-                <span className="text-gray-300">
-                  Ewaldstrase 28, 45699, Herten
+                <MapPin size={20} className="text-[#52a77f] mt-1 flex-shrink-0" />
+                <span className="text-gray-300 text-sm">
+                  {t('footer.address')}
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={20} className="text-green" />
-                <span className="text-gray-300">+49 172 8137 111</span>
+                <Mail size={20} className="text-[#52a77f] flex-shrink-0" />
+                <a href="mailto:info@backpackwander.com" className="text-gray-300 hover:text-[#52a77f] transition-colors text-sm">
+                  {t('footer.email')}
+                </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={20} className="text-green" />
-                <span className="text-gray-300"> {t("footer.email")}</span>
+                <span className="text-gray-300 text-sm">
+                  {t('footer.hrb')}
+                </span>
               </div>
             </div>
           </div>
 
-          {/* Newsletter */}
+          {/* Get in Touch */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-red">
-              {t("footer.newsletter")}
+            <h3 className="text-xl font-semibold mb-4 text-white">
+              {t('footer.aboutUs')}
             </h3>
-            <p className="mb-4 text-gray-300">{t("footer.newsletterText")}</p>
-            {showSuccess ? (
-              <div className="bg-green bg-opacity-20 border border-green rounded-lg p-3 mb-3 flex items-center">
-                <CheckCircle size={20} className="text-green mr-2" />
-                <p className="text-white text-sm">{t("newsletter.title")}</p>
-              </div>
-            ) : (
-              <form className="space-y-2" onSubmit={handleSubmit}>
-                <input
-                  type="email"
-                  placeholder={t("footer.emailPlaceholder")}
-                  className="w-full px-4 py-2 bg-gray-800 rounded-lg text-white border border-gray-700 focus:ring-2 focus:ring-green focus:border-transparent"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-green hover:bg-opacity-90 text-white font-medium py-2 rounded-lg transition-colors"
-                >
-                  {t("footer.subscribe")}
-                </button>
-              </form>
-            )}
+            <p className="text-gray-300 text-sm leading-relaxed">
+              {t('footer.aboutDescription')}
+            </p>
           </div>
         </div>
 
@@ -195,66 +193,24 @@ const Footer = () => {
         <div className="border-t border-gray-800 my-8"></div>
 
         {/* Footer Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Backpack Wander GmbH. {t("footer.rights")}
-          </p>{" "}
-          {/* Made by BW Digit */}
-          <p className="text-gray-400 text-sm my-2 md:my-0">
-            <span className="text-gray-400">{t("footer.madeBy")} </span>
-            <a
-              href="http://bwdigit.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green hover:text-green-400 transition-colors"
-            >
-              BW Digit
-            </a>
+            {t('footer.rights', { year: currentYear })}
           </p>
-          <div className="mt-4 md:mt-0 flex space-x-4 text-sm text-gray-400">
+          <div className="flex space-x-4 text-sm text-gray-400">
             <Link
               to="/privacy-policy"
-              className="hover:text-green transition-colors"
+              className="hover:text-[#52a77f] transition-colors"
             >
-              {t("footer.privacy")}
+              {t('footer.privacy')}
             </Link>
+            <span>|</span>
             <Link
-              to="/terms-and-conditions"
-              className="hover:text-green transition-colors"
+              to="/impressum"
+              className="hover:text-[#52a77f] transition-colors"
             >
-              {t("footer.terms")}
+              {t('footer.impressum')}
             </Link>
-            <a href="#" className="hover:text-green transition-colors">
-              {t("footer.imprint")}
-            </a>{" "}
-            <div className="flex space-x-2">
-              <button
-                className={`px-2 transition-colors ${
-                  i18n.language === "en" ? "text-green" : "hover:text-green"
-                }`}
-                onClick={() => i18n.changeLanguage("en")}
-              >
-                EN
-              </button>
-              <span>|</span>
-              <button
-                className={`px-2 transition-colors ${
-                  i18n.language === "de" ? "text-green" : "hover:text-green"
-                }`}
-                onClick={() => i18n.changeLanguage("de")}
-              >
-                DE
-              </button>
-              <span>|</span>
-              <button
-                className={`px-2 transition-colors ${
-                  i18n.language === "sr" ? "text-green" : "hover:text-green"
-                }`}
-                onClick={() => i18n.changeLanguage("sr")}
-              >
-                SR
-              </button>
-            </div>
           </div>
         </div>
       </div>

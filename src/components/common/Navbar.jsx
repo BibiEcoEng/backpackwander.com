@@ -1,63 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
 
-  // Navigation handler that works with React Router
-  const handleNavClick = (targetId) => {
-    if (location.pathname === '/') {
-      // If already on home page, scroll to section
-      const element = document.querySelector(targetId);
-      if (element) {
-        setIsOpen(false);
-        window.scrollTo({
-          top: element.offsetTop - 100,
-          behavior: 'smooth',
-        });
-      }
-    } else {
-      // If on different page, navigate to home with hash
-      navigate('/' + targetId);
-    }
+  // Get language-aware links
+  const getEngineeringLink = () => {
+    return i18n.language === 'de'
+      ? 'https://www.pipelinequality.com/de/'
+      : 'https://www.pipelinequality.com/en/';
   };
 
-  // Handle digital services navigation based on current language
-  const handleDigitalServicesClick = () => {
-    const currentLang = i18n.language;
-    let url = 'http://bwdigit.de'; // default to German
-
-    if (currentLang === 'en') {
-      url = 'http://bwdigit.com';
-    } else if (currentLang === 'sr') {
-      url = 'http://bwdigit.rs';
-    } else if (currentLang === 'de') {
-      url = 'http://bwdigit.de';
-    }
-
-    window.open(url, '_blank');
-    setIsOpen(false);
+  const getDigitalLink = () => {
+    return 'https://www.bwdigit.com/';
   };
-
-  // Handle hash navigation after route change
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        setTimeout(() => {
-          window.scrollTo({
-            top: element.offsetTop - 100,
-            behavior: 'smooth',
-          });
-        }, 100);
-      }
-    }
-  }, [location]);
 
   // Desktop nav link style with hover animation
   const navLinkStyle =
@@ -74,39 +33,22 @@ const Navbar = () => {
         <Link to='/' onClick={() => setIsOpen(false)} className={navLinkStyle}>
           {t('navbar.home')}
         </Link>
-        <button onClick={handleDigitalServicesClick} className={navLinkStyle}>
-          {t('navbar.services')}
-        </button>
         <a
-          href='http://setfreeway.com'
+          href={getEngineeringLink()}
           target='_blank'
-          onClick={() => setIsOpen(false)}
+          rel='noopener noreferrer'
           className={navLinkStyle}
         >
-          {t('navbar.coaching')}
+          Engineering
         </a>
         <a
-          href='http://backpackwander.org'
+          href={getDigitalLink()}
           target='_blank'
-          onClick={() => setIsOpen(false)}
+          rel='noopener noreferrer'
           className={navLinkStyle}
         >
-          {t('navbar.digital')}
+          Digital
         </a>
-        <a
-          href='https://backpackwander.store'
-          target='_blank'
-          onClick={() => setIsOpen(false)}
-          className={navLinkStyle}
-        >
-          {t('navbar.shop')}
-        </a>
-        <button
-          onClick={() => handleNavClick('#contact')}
-          className={navLinkStyle}
-        >
-          {t('navbar.contact')}
-        </button>
       </div>
 
       {/* Sign In / Sign Up */}
@@ -149,42 +91,24 @@ const Navbar = () => {
           >
             {t('navbar.home')}
           </Link>
-          <button
-            onClick={handleDigitalServicesClick}
-            className='text-white text-sm hover:text-black transition-colors duration-300 text-left'
-          >
-            {t('navbar.services')}
-          </button>
           <a
-            href='http://setfreeway.com'
+            href={getEngineeringLink()}
             target='_blank'
+            rel='noopener noreferrer'
             className='text-white text-sm hover:text-black transition-colors duration-300'
             onClick={() => setIsOpen(false)}
           >
-            {t('navbar.coaching')}
+            Engineering
           </a>
           <a
-            href='http://backpackwander.org'
+            href={getDigitalLink()}
             target='_blank'
+            rel='noopener noreferrer'
             className='text-white text-sm hover:text-black transition-colors duration-300'
             onClick={() => setIsOpen(false)}
           >
-            {t('navbar.digital')}
+            Digital
           </a>
-          <a
-            href='https://backpackwander.store'
-            target='_blank'
-            className='text-white text-sm hover:text-black transition-colors duration-300'
-            onClick={() => setIsOpen(false)}
-          >
-            {t('navbar.shop')}
-          </a>
-          <button
-            className='text-white text-sm hover:text-black transition-colors duration-300 text-left'
-            onClick={() => handleNavClick('#contact')}
-          >
-            {t('navbar.contact')}
-          </button>
           <hr />
           <LanguageSwitcher />
         </div>

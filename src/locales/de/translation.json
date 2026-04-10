@@ -1,8 +1,7 @@
 {
   "languageSwitcher": {
     "en": "English",
-    "de": "German",
-    "sr": "Serbian"
+    "de": "German"
   },
   "seo": {
     "home": {
@@ -23,22 +22,39 @@
   },
   "navbar": {
     "home": "Startseite",
-    "coaching": "Coaching & Kurse",
-    "services": "Digitale Dienstleistungen",
-    "digital": "Gemeinschaft",
-    "shop": "Shop",
+    "engineering": "Ingenieurwesen",
+    "digital": "Digital",
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Backpack Wander",
-    "subtitle": "Ihr Partner für neue Wege",
-    "services": "Individuelles Coaching | Webdesign | Digitale Strategie",
-    "buttons": {
-      "coaching": "Individuelles Coaching",
-      "webDesign": "Webdesign",
-      "digitalStrategy": "Digitales Marketing"
+    "headline": "Ingenieurexzellenz trifft digitale Innovation.",
+    "subheadline": "Backpack Wander GmbH bietet spezialisierte QA/QC-Ingenieurleitungen und benutzerdefinierte digitale Tools, die Baustellen sicherer, schneller und effizienter machen.",
+    "pipelineQuality": {
+      "title": "Pipeline Quality",
+      "subtitle": "Ingenieurwesen & QA/QC-Dienstleistungen",
+      "services": [
+        "Schweißnahtverfolgung & Aufsicht",
+        "QA/QC-Dokumentation (MDR, ITP, RFI)",
+        "Baustellen-Inspektionen & Sichtprüfungen (VT2)",
+        "ISO 9001 & 45001 Konformität"
+      ],
+      "button": "Mehr erfahren"
     },
-    "description": "Wir unterstützen Freelancer, Expats und Visionäre beim Aufbau ihres Online-Geschäfts – authentisch, mehrsprachig und zukunftsorientiert. Wir setzen auf klare Strategien, kreative Freiheit und nachhaltiges Wachstum. Gemeinsam gestalten wir digitale Lösungen, die wirklich zu Ihnen passen. Ihr Weg in die digitale Selbstständigkeit beginnt genau hier."
+    "bwDigit": {
+      "title": "BW Digit",
+      "subtitle": "Digitale Tools & Automatisierung",
+      "services": [
+        "Digitale Dokumentation & Protokolle",
+        "Interaktive Baustellen-Karten & Fortschrittsverfolgung",
+        "Automatisierte Schweißnahtverfolgungstools",
+        "Kundenspezifische App-Entwicklung für Feldteams"
+      ],
+      "button": "Mehr erfahren"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "content": "Wir schließen die Lücke zwischen schwerer Technik und moderner Technologie. Unsere digitalen Tools werden von Ingenieuren für Ingenieure entwickelt, speziell um manuelle Fehler zu beseitigen und sicherzustellen, dass jede Schweißnaht, Karte und jedes Protokoll mit 100% Genauigkeit und Sicherheit dokumentiert wird."
+    }
   },
   "whatWeDo": {
     "title": "Was Wir Tun",
@@ -224,26 +240,19 @@
     "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie zu und erklären sich damit einverstanden, bezüglich Ihrer Anfrage kontaktiert zu werden."
   },
   "footer": {
-    "tagline": "Ihr Partner für neue Wege im digitalen Business, Coaching und Webdesign.",
-    "quickLinks": "Schnellzugriff",
-    "links": {
-      "about": "Über Uns",
-      "services": "Unsere Leistungen",
-      "coaching": "Business Coaching",
-      "webdesign": "Webdesign",
-      "blog": "Blog"
-    },
-    "contactUs": "Kontakt",
-    "newsletter": "Newsletter",
-    "newsletterText": "Abonnieren Sie unseren Newsletter für die neuesten Updates und Einblicke.",
-    "emailPlaceholder": "Ihre E-Mail-Adresse",
-    "subscribe": "Abonnieren",
-    "rights": "Alle Rechte vorbehalten.",
+    "services": "Dienstleistungen",
+    "pipelineQuality": "Pipeline Quality",
+    "bwDigit": "BW Digit",
+    "contactLink": "Kontakt",
+    "aboutUs": "Über uns",
+    "aboutDescription": "Backpack Wander GmbH spezialisiert sich auf QA/QC-Ingenieurleitungen und Digitallösungen für die Bauindustrie. Wir schließen die Lücke zwischen Ingenieurexzellenz und moderner Technologie.",
+    "contactSection": "Kontakt",
+    "address": "Kolonnenstraße 8, 10827 Berlin, Deutschland",
+    "email": "info@backpackwander.com",
+    "hrb": "HRB 282058 B (Berlin)",
     "privacy": "Datenschutz",
-    "terms": "AGB",
-    "imprint": "Impressum",
-    "madeBy": "Erstellt von",
-    "email": "info@backpackwander.de"
+    "impressum": "Impressum",
+    "rights": "© {{year}} Backpack Wander GmbH. Alle Rechte vorbehalten."
   },
   "potential": {
     "title": "Entfalten Sie Ihr Potenzial Mit",
@@ -325,7 +334,7 @@
       },
       "responsibleEntity": {
         "title": "2. Verantwortliche Stelle",
-        "content": "Backpack Wander GmbH\nKolonnenstrasse 8\n10827, Berlin\nDeutschland\n\nE-Mail: info@backpackwander.de"
+        "content": "Backpack Wander GmbH\nKolonnenstraße 8\n10827 Berlin\nDeutschland\n\nE-Mail: info@backpackwander.com"
       },
       "useOfData": {
         "title": "3. Datenverarbeitung & Ihre Rechte",

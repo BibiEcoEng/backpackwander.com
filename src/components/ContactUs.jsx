@@ -52,89 +52,66 @@ const ContactUs = () => {
     setIsSubmitting(true);
     setFormStatus({ submitted: false, success: false, message: '' });
 
-    const formElement = e.target;
-    const formDataToSend = new FormData(formElement);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Make sure all form data is included
-    Object.keys(formData).forEach((key) => {
-      if (!formDataToSend.has(key)) {
-        formDataToSend.append(key, formData[key]);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send email');
       }
-    });
 
-    // Add formsubmit.co specific fields
-    formDataToSend.append(
-      '_subject',
-      `Contact Form Submission: ${formData.subject}`
-    );
-    // Redirect to the same page after submission (prevents FormSubmit redirect page)
-    formDataToSend.append('_next', window.location.href);
-    // Disable captcha for better user experience
-    formDataToSend.append('_captcha', 'false');
+      setIsSubmitting(false);
+      setFormStatus({
+        submitted: true,
+        success: true,
+        message: t('contact.messageSent'),
+      });
 
-    fetch('https://formsubmit.co/ajax/info@backpackwander.com', {
-      method: 'POST',
-      body: formDataToSend,
-      headers: {
-        Accept: 'application/json',
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          return response.json().then((err) => {
-            throw err;
-          });
-        }
-        return response.json();
-      })
-      .then((data) => {
-        console.log('Success:', data);
-        setIsSubmitting(false);
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+      e.target.reset();
+
+      // Clear success message after 5 seconds
+      setTimeout(() => {
         setFormStatus({
-          submitted: true,
-          success: true,
-          message: t('contact.messageSent'),
-        });
-
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
+          submitted: false,
+          success: false,
           message: '',
         });
-        formElement.reset();
-
-        // Clear success message after 5 seconds
-        setTimeout(() => {
-          setFormStatus({
-            submitted: false,
-            success: false,
-            message: '',
-          });
-        }, 5000);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        setIsSubmitting(false);
-        setFormStatus({
-          submitted: true,
-          success: false,
-          message:
-            error.message ||
-            t('contact.errorMessage') ||
-            'Something went wrong. Please try again.',
-        });
-
-        // Clear error message after 5 seconds
-        setTimeout(() => {
-          setFormStatus({
-            submitted: false,
-            success: false,
-            message: '',
-          });
-        }, 5000);
+      }, 5000);
+    } catch (error) {
+      console.error('Error:', error);
+      setIsSubmitting(false);
+      setFormStatus({
+        submitted: true,
+        success: false,
+        message:
+          error.message ||
+          t('contact.errorMessage') ||
+          'Something went wrong. Please try again.',
       });
+
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setFormStatus({
+          submitted: false,
+          success: false,
+          message: '',
+        });
+      }, 5000);
+    }
   };
 
   return (

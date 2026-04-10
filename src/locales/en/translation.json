@@ -1,8 +1,7 @@
 {
   "languageSwitcher": {
     "en": "English",
-    "de": "German",
-    "sr": "Serbian"
+    "de": "German"
   },
   "seo": {
     "home": {
@@ -23,22 +22,39 @@
   },
   "navbar": {
     "home": "Home",
-    "coaching": "Coaching & Courses",
-    "services": "Digital Services",
-    "digital": "Community",
-    "shop": "Shop",
+    "engineering": "Engineering",
+    "digital": "Digital",
     "contact": "Contact"
   },
   "hero": {
-    "title": "Backpack Wander",
-    "subtitle": "Your partner for new paths",
-    "services": "Individual coaching | Web design | Digital strategy",
-    "buttons": {
-      "coaching": "Individual Coaching",
-      "webDesign": "Web Design",
-      "digitalStrategy": "Digital Marketing"
+    "headline": "Engineering Excellence Meets Digital Innovation.",
+    "subheadline": "Backpack Wander GmbH provides specialized QA/QC engineering services and custom digital tools designed to make construction sites safer, faster and more efficient.",
+    "pipelineQuality": {
+      "title": "Pipeline Quality",
+      "subtitle": "Engineering & QA/QC Services",
+      "services": [
+        "Welding Traceability & Supervision",
+        "QA/QC Documentation (MDR, ITP, RFI)",
+        "Site Walkdowns & Visual Inspections (VT2)",
+        "ISO 9001 & 45001 Compliance"
+      ],
+      "button": "Learn More"
     },
-    "description": "We support freelancers, expats, and visionaries in building their online businesses – authentic, multilingual, and future-oriented. We value clear strategies, creative freedom, and sustainable growth. Together, we design digital solutions that truly fit your needs. Your path to digital self-employment begins right here."
+    "bwDigit": {
+      "title": "BW Digit",
+      "subtitle": "Digital Tools & Automation",
+      "services": [
+        "Digital Documentation & Logs",
+        "Interactive Site Maps & Progress Tracking",
+        "Automated Welding Traceability Tools",
+        "Custom App Development for Field Teams"
+      ],
+      "button": "Learn More"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "We bridge the gap between heavy engineering and modern technology. Our digital tools are built by engineers, for engineers, specifically to eliminate manual errors and ensure every weld, map, and log is documented with 100% accuracy and safety."
+    }
   },
   "whatWeDo": {
     "title": "What We Do",
@@ -224,26 +240,19 @@
     "privacy": "By submitting this form, you agree to our privacy policy and consent to being contacted regarding your request."
   },
   "footer": {
-    "tagline": "Your partner for new paths in digital business, coaching, and web design.",
-    "quickLinks": "Quick Links",
-    "links": {
-      "about": "About Us",
-      "services": "Our Services",
-      "coaching": "Business Coaching",
-      "webdesign": "Web Design",
-      "blog": "Blog"
-    },
-    "contactUs": "Contact Us",
-    "newsletter": "Newsletter",
-    "newsletterText": "Subscribe to our newsletter for the latest updates and insights.",
-    "emailPlaceholder": "Your email address",
-    "subscribe": "Subscribe",
-    "rights": "All rights reserved.",
+    "services": "Services",
+    "pipelineQuality": "Pipeline Quality",
+    "bwDigit": "BW Digit",
+    "contactLink": "Contact",
+    "aboutUs": "About Us",
+    "aboutDescription": "Backpack Wander GmbH specializes in QA/QC engineering services and digital solutions for the construction industry. We bridge the gap between engineering excellence and modern technology.",
+    "contactSection": "Contact",
+    "address": "Kolonnenstraße 8, 10827 Berlin, Germany",
+    "email": "info@backpackwander.com",
+    "hrb": "HRB 282058 B (Berlin)",
     "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions",
-    "imprint": "Imprint",
-    "madeBy": "Made by",
-    "email": "info@backpackwander.com"
+    "impressum": "Impressum",
+    "rights": "© {{year}} Backpack Wander GmbH. All rights reserved."
   },
   "potential": {
     "title": "Unlock Your Potential With",
@@ -325,7 +334,7 @@
       },
       "responsibleEntity": {
         "title": "2. Responsible Entity",
-        "content": "Backpack Wander GmbH\nKolonnenstrasse 8\n10827, Berlin\nGermany\n\nEmail: info@backpackwander.com"
+        "content": "Backpack Wander GmbH\nKolonnenstraße 8\n10827 Berlin\nGermany\n\nEmail: info@backpackwander.com"
       },
       "useOfData": {
         "title": "3. Data Processing & Your Rights",

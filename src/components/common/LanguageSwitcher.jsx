@@ -39,11 +39,6 @@ const LanguageSwitcher = () => {
       label: t('languageSwitcher.de'),
       flag: '/images/flags/de.svg',
     },
-    {
-      code: 'sr',
-      label: t('languageSwitcher.sr'),
-      flag: '/images/flags/sr.svg',
-    },
   ];
 
   // Get current language label
