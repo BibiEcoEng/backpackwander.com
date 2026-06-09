@@ -43,7 +43,7 @@ export function BwDigitSection() {
           <div className="bw-digit-visual relative z-10 w-full">
             <div className="section-media-frame">
               <Image
-                src="/Images/BW%20digit%20-1.jpeg"
+                src="/images/BW%20digit%20-1.jpeg"
                 alt="BW Digit digital solutions ecosystem"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

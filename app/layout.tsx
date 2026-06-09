@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     images: [siteConfig.seo.defaultOgImage]
   },
   icons: {
-    icon: '/Images/logo.png',
-    shortcut: '/Images/logo.png',
-    apple: '/Images/logo.png'
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png'
   }
 };
 

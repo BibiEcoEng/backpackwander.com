@@ -15,7 +15,7 @@ export function buildOrganizationSchema(locale: Locale): JsonLd {
     '@type': 'Organization',
     name: siteConfig.name,
     url,
-    logo: `${siteConfig.domains.en}/Images/logo.png`,
+    logo: `${siteConfig.domains.en}/images/logo.png`,
     description: siteConfig.description,
     email: footerInfo.email,
     sameAs: footerInfo.socialLinks.map((link) => link.url)

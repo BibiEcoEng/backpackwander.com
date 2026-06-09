@@ -218,7 +218,7 @@ export function Navbar() {
             onMouseDown={(e) => (e.currentTarget as HTMLElement).blur()}
           >
             <Image
-              src="/Images/logo.png"
+              src="/images/logo.png"
               alt="Backpack Wander logo"
               width={140}
               height={40}

@@ -9,7 +9,7 @@ export const siteConfig = {
   description:
     'Backpack Wander GmbH delivers quality assurance services, quality control services, QA QC engineering, inspection support and commissioning support across offshore wind, heavy fabrication and industrial construction projects worldwide.',
   seo: {
-    defaultOgImage: '/Images/logo.png',
+    defaultOgImage: '/images/logo.png',
     twitterHandle: '@backpackwander'
   }
 };

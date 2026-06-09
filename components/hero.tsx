@@ -90,7 +90,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 md:hidden">
           <Image
-            src="/Images/Banner.png"
+            src="/images/Banner.png"
             alt="Hero background mobile"
             fill
             priority
@@ -102,7 +102,7 @@ export function Hero() {
         <div className="hero-bg-cover absolute inset-0 hidden md:grid">
           <div className="hero-bg-panel">
             <Image
-              src="/Images/hero-1%20(2).jpg"
+              src="/images/hero-1%20(2).jpg"
               alt="Offshore wind turbines"
               fill
               sizes="50vw"
@@ -111,7 +111,7 @@ export function Hero() {
           </div>
           <div className="hero-bg-panel">
             <Image
-              src="/Images/Hero-4.jpeg"
+              src="/images/Hero-4.jpeg"
               alt="Industrial construction site"
               fill
               sizes="50vw"

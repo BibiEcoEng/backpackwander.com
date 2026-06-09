@@ -26,7 +26,7 @@ export function IndustriesSection() {
             <div className="industries-media-slot">
               <div className="section-media-frame">
                 <Image
-                  src="/Images/Bolits-image.jpeg"
+                  src="/images/Bolits-image.jpeg"
                   alt="Industrial facility and engineering infrastructure"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

@@ -71,7 +71,7 @@ export function AboutUsSection({ headingLevel = 'h2' }: AboutUsSectionProps) {
 
           <div className="about-section-media relative mx-auto aspect-[16/10] w-full max-w-full overflow-hidden rounded-xl md:aspect-[4/3] md:max-h-[380px]">
             <Image
-              src="/Images/Monopole%20offshore.jpeg"
+              src="/images/Monopole%20offshore.jpeg"
               alt="Offshore monopile wind farm"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

@@ -42,7 +42,7 @@ export function PipelineQualitySection() {
 
             <div className="section-media-frame">
               <Image
-                src="/Images/Pipline%20quality-1%20(1).jpeg"
+                src="/images/Pipline%20quality-1%20(1).jpeg"
                 alt={section.pipeline.imageAlt}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

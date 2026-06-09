@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const IMAGES = [
-  '/Images/Banner.png',
-  '/Images/banner-2.png',
-  '/Images/banner-3.png',
-  '/Images/Banner-4.png'
+  '/images/Banner.png',
+  '/images/banner-2.png',
+  '/images/banner-3.png',
+  '/images/Banner-4.png'
 ];
 
 export function ImageCarousel() {
