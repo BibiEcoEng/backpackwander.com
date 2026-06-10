@@ -123,14 +123,11 @@ export const translations = {
       title: "Let's Discuss Your Project",
       introLines: [
         'Backpack Wander GmbH supports offshore and industrial projects',
-        'through Pipeline Quality, with modern digital services delivered by',
-        'BW Digit. Response within 24 business hours'
+        'through Pipeline Quality, with digital services delivered by BW Digit.',
+        'Response within 24 business hours'
       ],
       introLinesMobile: [
-        'Backpack Wander GmbH supports',
-        'offshore and industrial projects',
-        'through Pipeline Quality, with modern',
-        'digital services delivered by BW Digit.',
+        'Backpack Wander GmbH supports offshore and industrial projects through Pipeline Quality, with digital services delivered by BW Digit.',
         'Response within 24 business hours'
       ],
       discussProject: 'Discuss Your Project',
@@ -243,11 +240,14 @@ export const translations = {
       joinNetwork: 'Contact the Team'
     },
     footer: {
+      brandDescription:
+        'Industrial engineering oversight, QA/QC, and offshore wind support. Technical documentation and project coordination for international industrial delivery.',
       brandDescriptionLines: [
-        'Industrial engineering oversight, QA/QC, offshore wind support,',
-        'technical documentation, and project coordination for international industrial delivery.'
+        'Industrial engineering oversight, QA/QC, and offshore wind support.',
+        'Technical documentation and project coordination for international industrial delivery.'
       ],
-      navigation: 'Quick Links',
+      navigation: 'Explore',
+      companyName: 'Backpack Wander GmbH',
       divisions: 'Company Divisions',
       companyDivisions: 'Company Divisions',
       highlights: ['Industrial Engineering', 'Quality Assurance', 'Project Support'],
@@ -256,6 +256,7 @@ export const translations = {
       contactNote: 'Response within 24 business hours',
       addressLabel: 'Address',
       address: 'Kolonnenstraße 8, 10827 Berlin, Germany',
+      addressLines: ['Kolonnenstraße 8, 10827 Berlin, Germany'],
       email: 'Email',
       phone: 'Phone Number',
       whatsapp: 'WhatsApp',
@@ -629,14 +630,11 @@ export const translations = {
       title: 'Lassen Sie uns über Ihr Projekt sprechen',
       introLines: [
         'Backpack Wander GmbH unterstützt Offshore- und Industrieprojekte',
-        'über Pipeline Quality, mit modernen digitalen Dienstleistungen von',
-        'BW Digit. Antwort innerhalb von 24 Geschäftsstunden'
+        'über Pipeline Quality, mit digitalen Dienstleistungen von BW Digit.',
+        'Antwort innerhalb von 24 Geschäftsstunden'
       ],
       introLinesMobile: [
-        'Backpack Wander GmbH unterstützt',
-        'Offshore- und Industrieprojekte',
-        'über Pipeline Quality, mit modernen',
-        'digitalen Dienstleistungen von BW Digit.',
+        'Backpack Wander GmbH unterstützt Offshore- und Industrieprojekte über Pipeline Quality, mit digitalen Dienstleistungen von BW Digit.',
         'Antwort innerhalb von 24 Geschäftsstunden'
       ],
       discussProject: 'Projekt besprechen',
@@ -751,11 +749,14 @@ export const translations = {
       joinNetwork: 'Team kontaktieren'
     },
     footer: {
+      brandDescription:
+        'Industrielle Engineering-Überwachung, QA/QC und Offshore-Wind-Support. Technische Dokumentation und Projektkoordination für internationale industrielle Projekte.',
       brandDescriptionLines: [
-        'Industrielle Engineering-Überwachung, QA/QC, Offshore-Wind-Support,',
-        'technische Dokumentation und Projektkoordination für internationale industrielle Projekte.'
+        'Industrielle Engineering-Überwachung, QA/QC und Offshore-Wind-Support.',
+        'Technische Dokumentation und Projektkoordination für internationale industrielle Projekte.'
       ],
-      navigation: 'Schnelllinks',
+      navigation: 'Entdecken',
+      companyName: 'Backpack Wander GmbH',
       divisions: 'Unternehmensbereiche',
       companyDivisions: 'Unternehmensbereiche',
       highlights: ['Industrielles Engineering', 'Qualitätssicherung', 'Projektsupport'],
@@ -764,6 +765,7 @@ export const translations = {
       contactNote: 'Antwort innerhalb von 24 Geschäftsstunden',
       addressLabel: 'Adresse',
       address: 'Kolonnenstraße 8, 10827 Berlin, Deutschland',
+      addressLines: ['Kolonnenstraße 8, 10827 Berlin, Deutschland'],
       email: 'E-Mail',
       phone: 'Telefonnummer',
       whatsapp: 'WhatsApp',

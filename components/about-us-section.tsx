@@ -30,7 +30,7 @@ export function AboutUsSection({ headingLevel = 'h2' }: AboutUsSectionProps) {
                   <p
                     className={`max-w-none${
                       index === 1
-                        ? ' about-experience-text font-semibold whitespace-pre-line text-offwhite'
+                        ? ' about-experience-text whitespace-pre-line text-offwhite'
                         : ' text-secondaryText'
                     }`}
                   >

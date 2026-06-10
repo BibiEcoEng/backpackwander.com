@@ -24,7 +24,7 @@ export function ContactSection() {
               {section.introLines.map((line, idx) => (
                 <span
                   key={line}
-                  className={`contact-section-intro-line${idx === section.introLines.length - 1 ? ' text-secondaryText' : ''}`}
+                  className={`contact-section-intro-line${idx === section.introLines.length - 1 ? ' contact-section-note-line text-secondaryText' : ''}`}
                 >
                   {line}
                 </span>
