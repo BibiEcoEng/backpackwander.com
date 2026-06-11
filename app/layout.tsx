@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Backpack Wander GmbH provides industrial engineering support, QA/QC oversight, offshore wind expertise, documentation control, and technical coordination for global projects.',
   alternates: {
     languages: {
-      en: `${siteConfig.domains.en}/en`,
+      en: `${siteConfig.domains.en}/`,
       de: `${siteConfig.domains.de}/de`
     }
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'Backpack Wander GmbH',
     description:
       'Industrial engineering oversight, QA/QC, offshore wind support, and technical documentation for international projects.',
-    url: `${siteConfig.domains.en}/en`,
+    url: `${siteConfig.domains.en}/`,
     siteName: 'Backpack Wander GmbH',
     type: 'website',
     images: [

@@ -1,6 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { siteConfig } from '@/lib/site';
-import { getLocaleFromHost, getLocaleFromPath, getLocalizedPath, isLocale } from '@/lib/routing';
+import {
+  defaultLocale,
+  getInternalLocalePath,
+  getLocaleFromHost,
+  getLocaleFromPath,
+  getLocalizedPath,
+  stripLocalePrefix
+} from '@/lib/routing';
 
 const PUBLIC_FILE = /\.(.*)$/;
 
@@ -36,27 +43,41 @@ export function middleware(request: NextRequest) {
 
   const host = getHost(request);
   const hostLocale = getLocaleFromHost(host);
-  const pathLocale = getLocaleFromPath(pathname);
-  const currentLocale = pathLocale ?? hostLocale;
 
-  if (pathLocale) {
-    const targetDomain = pathLocale === 'de' ? siteConfig.domains.de : siteConfig.domains.en;
-    const pathMatchesDomain = (host.endsWith('.de') && pathLocale === 'de') || (host.endsWith('.com') && pathLocale === 'en');
+  // Redirect legacy /en URLs to clean English URLs (no locale prefix).
+  if (/^\/en(?:\/|$)/.test(pathname)) {
+    const cleanPath = stripLocalePrefix(pathname);
+    const targetUrl = new URL(`${cleanPath}${search}`, request.url);
+    return NextResponse.redirect(targetUrl);
+  }
+
+  const pathLocale = getLocaleFromPath(pathname);
+
+  if (pathLocale === 'de') {
+    const pathMatchesDomain = host.endsWith('.de');
 
     if (!pathMatchesDomain && (host.endsWith('.de') || host.endsWith('.com'))) {
-      const targetUrl = new URL(`${getLocalizedPath(pathLocale, pathname)}${search}`, targetDomain);
+      const targetUrl = new URL(`${getLocalizedPath('de', pathname)}${search}`, siteConfig.domains.de);
       return NextResponse.redirect(targetUrl);
     }
 
-    const response = NextResponse.next({ request: { headers: withLocaleHeader(request, currentLocale) } });
-    return response;
+    return NextResponse.next({ request: { headers: withLocaleHeader(request, 'de') } });
   }
 
-  const targetPath = getLocalizedPath(currentLocale, pathname);
-  const targetUrl = new URL(`${targetPath}${search}`, request.url);
+  // Unprefixed paths on German domains should use /de prefix.
+  if (hostLocale === 'de') {
+    const targetPath = getLocalizedPath('de', pathname);
+    const targetUrl = new URL(`${targetPath}${search}`, request.url);
+    return NextResponse.redirect(targetUrl);
+  }
 
-  const response = NextResponse.redirect(targetUrl);
-  return response;
+  // Default English: rewrite to internal /en route while keeping clean URL.
+  const internalPath = getInternalLocalePath(defaultLocale, pathname);
+  const rewriteUrl = new URL(`${internalPath}${search}`, request.url);
+
+  return NextResponse.rewrite(rewriteUrl, {
+    request: { headers: withLocaleHeader(request, defaultLocale) }
+  });
 }
 
 export const config = {
