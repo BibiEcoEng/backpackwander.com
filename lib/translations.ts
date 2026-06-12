@@ -248,15 +248,15 @@ export const translations = {
         'Technical documentation and project coordination for international industrial delivery.'
       ],
       brandDescriptionDesktopLines: [
-        'Industrial engineering oversight, QA/QC,',
-        'and offshore wind support. Technical',
-        'documentation and project coordination',
-        'for international industrial delivery.'
-      ],
-      brandDescriptionMobileLines: [
         'Industrial engineering oversight, QA/QC, and offshore',
         'wind support. Technical documentation and project',
         'coordination for international industrial delivery.'
+      ],
+      brandDescriptionMobileLines: [
+        'Industrial engineering oversight, QA/QC',
+        'and offshore wind support. Technical',
+        'documentation and project coordination for',
+        'international industrial delivery.'
       ],
       navigation: 'Explore',
       companyName: 'Backpack Wander GmbH',
@@ -770,15 +770,14 @@ export const translations = {
       ],
       brandDescriptionDesktopLines: [
         'Industrielle Engineering-Überwachung, QA/QC,',
-        'und Offshore-Wind-Support. Technische',
-        'Dokumentation und Projektkoordination',
-        'für internationale industrielle Projekte.'
+        'und Offshore-Wind-Support. Technische Dokumentation und',
+        'Projektkoordination für internationale industrielle Projekte.'
       ],
       brandDescriptionMobileLines: [
-        'Industrielle Engineering-Überwachung,',
-        'QA/QC und Offshore-Wind-Support.',
-        'Technische Dokumentation und Projektkoordination',
-        'für internationale industrielle Projekte.'
+        'Industrielle Engineering-Überwachung, QA/QC',
+        'und Offshore-Wind-Support. Technische',
+        'Dokumentation und Projektkoordination für',
+        'internationale industrielle Projekte.'
       ],
       navigation: 'Entdecken',
       companyName: 'Backpack Wander GmbH',
