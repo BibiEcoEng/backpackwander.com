@@ -775,9 +775,10 @@ export const translations = {
         'für internationale industrielle Projekte.'
       ],
       brandDescriptionMobileLines: [
-        'Industrielle Engineering-Überwachung, QA/QC und',
-        'Offshore-Wind-Support. Technische Dokumentation und',
-        'Projektkoordination für internationale industrielle Projekte.'
+        'Industrielle Engineering-Überwachung,',
+        'QA/QC und Offshore-Wind-Support.',
+        'Technische Dokumentation und Projektkoordination',
+        'für internationale industrielle Projekte.'
       ],
       navigation: 'Entdecken',
       companyName: 'Backpack Wander GmbH',

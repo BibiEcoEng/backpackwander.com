@@ -153,24 +153,24 @@ export function Hero() {
                       ))}
                     </p>
                   </div>
+
+                  <div className="hero-cta-group section-cta-row">
+                    <a
+                      href="#contact"
+                      onClick={(e) => handleAnchorClick(e as unknown as React.MouseEvent, 'contact')}
+                      className="section-cta-btn btn-primary type-cta inline-flex items-center justify-center transition sm:w-auto"
+                    >
+                      {content.hero.ctaDiscuss}
+                    </a>
+
+                    <a
+                      href="#services"
+                      onClick={(e) => handleAnchorClick(e as unknown as React.MouseEvent, 'services')}
+                      className="section-cta-btn btn-secondary type-cta inline-flex items-center justify-center transition sm:w-auto"
+                    >
+                      {content.hero.ctaExplore}
+                    </a>
                   </div>
-
-                  <div className="hero-cta-group">
-                  <a
-                    href="#contact"
-                    onClick={(e) => handleAnchorClick(e as unknown as React.MouseEvent, 'contact')}
-                    className="btn-primary type-cta inline-flex w-full max-w-sm items-center justify-center transition sm:w-auto"
-                  >
-                    {content.hero.ctaDiscuss}
-                  </a>
-
-                  <a
-                    href="#services"
-                    onClick={(e) => handleAnchorClick(e as unknown as React.MouseEvent, 'services')}
-                    className="btn-secondary type-cta inline-flex w-full max-w-sm items-center justify-center transition sm:w-auto"
-                  >
-                    {content.hero.ctaExplore}
-                  </a>
                   </div>
                 </div>
               </div>
